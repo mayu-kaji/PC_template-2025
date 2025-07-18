@@ -31,7 +31,6 @@ $breakpoints: (
 
 $mediaquerys: (
   sm: "screen and (max-width: #{map.get($breakpoints, 'sm')}px)",
-  
   md: "screen and (max-width: #{map.get($breakpoints, 'md')}px)",
   lg: "screen and (max-width: #{map.get($breakpoints, 'lg')}px)",
   xl: "screen and (max-width: #{map.get($breakpoints, 'xl')}px)",
