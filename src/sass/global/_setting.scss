@@ -1,0 +1,25 @@
+@use 'sass:math';
+
+// インナー幅
+$innerWidth: 1024px;
+
+// 余白
+$padding-pc: 25px;
+$padding-sp: 20px;
+
+// フォント
+$font-main: "Noto Sans JP", "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro" , "メイリオ", "游ゴシック体", "YuGothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$font-main: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$font-main: "游ゴシック体","游ゴシック", YuGothic, "Yu Gothic", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+
+// 色指定
+$black: #333;
+$white: #fff;
+$red: #ff0000;
+$blue: #004098;
+$gray: #ddd;
+$navy: #00317A;
+
+
+

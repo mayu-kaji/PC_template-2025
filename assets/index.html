@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>タイトル</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <!-- <link rel="icon" href="" /> -->
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/common.css">
+</head>
+
+<body>
+  <header class="p-header l-header js-header">
+    <div class="p-header__inner">
+      <h1 class="p-header__logo">
+        <a href="">
+          <picture>
+            <source srcset="./img/logo.png" media="(min-width: 768px)" type="image/png">
+            <source srcset="./img/logo.png" media="(max-width: 767px)" type="image/png">
+            <img src="/img/logo.png" alt="logo">
+          </picture>
+        </a>
+      </h1>
+      <nav class="p-header__nav">
+        <ul class="p-header__nav-items">
+          <li class="p-header__nav-item  p-header__nav-item--dropdown js-menu">
+            <p>私たちについて</p>
+            <ul class="p-header__nav-dropdown js-dropdown-menu">
+              <li><a href="">ご挨拶</a></li>
+              <li><a href="">私たちのこだわり</a></li>
+              <li><a href="">会社概要</a></li>
+              <li><a href="">アクセス</a></li>
+            </ul>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="">取り扱いサービス</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="">お知らせ</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="">採用情報</a>
+          </li>
+          <li class="p-header__nav-item p-header__nav-item--contact">
+            <a href="">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="p-header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="p-header__drawer js-drawer">
+        <nav class="p-header__drawer-nav">
+          <ul class="p-header__drawer-items">
+            <li class="p-header__drawer-item">
+              <span>イーテックについて</span>
+              <ul class="p-header__drawer-lists">
+                <li class="p-header__drawer-list-item">
+                  <a href="">ご挨拶</a>
+                </li>
+                <li class="p-header__drawer-list-item">
+                  <a href="">イーテックのこだわり</a>
+                </li>
+                <li class="p-header__drawer-list-item">
+                  <a href="">会社概要</a>
+                </li>
+                <li class="p-header__drawer-list-item">
+                  <a href="">アクセス</a>
+                </li>
+              </ul>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="#">取り扱いサービス</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="">お客様の声</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="">採用情報</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="">お問い合わせ</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="">プライバシーポリシー</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- main visual -->
+    <div class="p-top-mv">
+      <div class="p-top-mv__inner">
+        <div class="p-top-mv__img-box">
+          <div class="swiper-container p-top-mv__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="p-top-mv__img">
+                  <img src="./img/mv_01.webp" alt="main_visual">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-top-mv__img">
+                  <img src="./img/mv_02.webp" alt="main_visual">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-top-mv__img">
+                  <img src="./img/mv_03.webp" alt="main_visual">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-top-mv__img">
+                  <img src="./img/mv_04.webp" alt="main_visual">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-top-mv__txt-box">
+            <div class="p-top-mv__logo-img">
+              <img src="./img/logo_01.svg" alt="logo">
+            </div>
+            <p class="p-top-mv__copy">
+              Let's run around the island while<br>
+              feeling the wind of Miyakojima!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="l-page-top c-page-top js-pagetop">page-top</a>
+  </main>
+  <!-- faq -->
+  <section class="p-faq">
+    <div class="p-faq__inner l-inner">
+      <h2 class="p-faq__ttl c-ttl" id="faq">FAQ<span>よくあるご質問</span></h2>
+      <div class="p-faq__container">
+        <dl class="p-faq__item">
+          <dt class="p-faq__item-ttl js-accordion">
+            <p class="p-faq__item-q">購入できる場所を教えてください</p>
+            <!-- btn -->
+            <div class="p-faq__btn js-accordion-btn">
+              <button class="c-open-btn js-rotate">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </dt>
+          <dd class="p-faq__item-txt js-closed">
+            <p class="p-faq__item-a">購入のご相談は<a href="#contact">お問い合わせフォーム</a>よりご連絡ください。</p>
+          </dd>
+        </dl>
+        <dl class="p-faq__item">
+          <dt class="p-faq__item-ttl js-accordion">
+            <p class="p-faq__item-q">走行時にヘルメットは必要ですか</p>
+            <!-- btn -->
+            <div class="p-faq__btn js-accordion-btn">
+              <button class="c-open-btn js-rotate">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </dt>
+          <dd class="p-faq__item-txt js-closed">
+            <p class="p-faq__item-a">
+              軽車両に分類されますので、ヘルメット着用は努力義務が課されています。交通事故時のけが防止の観点でもヘルメットの着用をおすすめします。
+            </p>
+          </dd>
+        </dl>
+        <dl class="p-faq__item">
+          <dt class="p-faq__item-ttl js-accordion">
+            <p class="p-faq__item-q">運転に免許は必要ですか</p>
+            <!-- btn -->
+            <div class="p-faq__btn js-accordion-btn">
+              <button class="c-open-btn js-rotate">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </dt>
+          <dd class="p-faq__item-txt js-closed">
+            <p class="p-faq__item-a">
+              免許は不要で運転できます。
+            </p>
+          </dd>
+        </dl>
+        <dl class="p-faq__item">
+          <dt class="p-faq__item-ttl js-accordion">
+            <p class="p-faq__item-q">荷物は何kgまで積載できますか</p>
+            <!-- btn -->
+            <div class="p-faq__btn js-accordion-btn">
+              <button class="c-open-btn js-rotate">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </dt>
+          <dd class="p-faq__item-txt js-closed">
+            <p class="p-faq__item-a">
+              最大積載量は30kgです。2泊3日程度のスーツケースや、釣具、一般的な工具箱であれば安心して積載いただけます。
+            </p>
+          </dd>
+        </dl>
+        <dl class="p-faq__item">
+          <dt class="p-faq__item-ttl js-accordion">
+            <p class="p-faq__item-q">充電はどのように行いますか</p>
+            <!-- btn -->
+            <div class="p-faq__btn js-accordion-btn">
+              <button class="c-open-btn js-rotate">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </dt>
+          <dd class="p-faq__item-txt js-closed">
+            <p class="p-faq__item-a">
+              バッテリーを車体から取り外し、付属の専用充電器を使って、ご家庭のコンセント(100V)から簡単に充電できます。
+            </p>
+          </dd>
+        </dl>
+        <dl class="p-faq__item">
+          <dt class="p-faq__item-ttl js-accordion">
+            <p class="p-faq__item-q">公道は走行できますか</p>
+            <!-- btn -->
+            <div class="p-faq__btn js-accordion-btn">
+              <button class="c-open-btn js-rotate">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </dt>
+          <dd class="p-faq__item-txt js-closed">
+            <p class="p-faq__item-a">
+              道路交通法上、LA SI QUEは軽車両に分類されます。車道と歩道の区別があるところは車道の左側に寄って通行することが原則です。
+            </p>
+          </dd>
+        </dl>
+        <dl class="p-faq__item">
+          <dt class="p-faq__item-ttl js-accordion">
+            <p class="p-faq__item-q">試乗はできますか</p>
+            <!-- btn -->
+            <div class="p-faq__btn js-accordion-btn">
+              <button class="c-open-btn js-rotate">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </dt>
+          <dd class="p-faq__item-txt js-closed">
+            <p class="p-faq__item-a">
+              現在、法人・行政の方の試乗を随時受け付けております。試乗できる台数や貸し出しできる地域に限りがありますので、<a href="#contact">お問い合わせフォーム</a> よりご連絡・ご相談ください。
+            </p>
+          </dd>
+        </dl>
+      </div>
+      <a href="" class="c-btn">一覧へ</a>
+    </div>
+  </section>
+  <!-- test -->
+  <div class="p-tab">
+    <div class="p-tab__inner l-inner">
+      <div class="tab-wrap">
+        <input id="TAB02-01" type="radio" name="TAB02" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB02-01">2024</label>
+        <ul class="tab-content">
+          <li class="p-tab__item">
+            <time class="p-tab-date" datetime="2024-05-24">05/24 (月)</time>
+            <p class="p-tab__tag">Rd1</p>
+            <p class="p-tab__place">鈴鹿サーキット</p>
+            <a href="" class="p-tab__link">レースレポート</a>
+          </li>
+          <li class="p-tab__item">
+            <time class="p-tab-date" datetime="2024-05-24">05/24 (月)</time>
+            <p class="p-tab__tag">Rd1</p>
+            <p class="p-tab__place">鈴鹿サーキット</p>
+            <a href="" class="p-tab__link">レースレポート</a>
+          </li>
+          <li class="p-tab__item">
+            <time class="p-tab-date" datetime="2024-05-24">05/24 (月)</time>
+            <p class="p-tab__tag">Rd1</p>
+            <p class="p-tab__place">鈴鹿サーキット</p>
+            <a href="" class="p-tab__link">レースレポート</a>
+          </li>
+        </ul>
+        <input id="TAB02-02" type="radio" name="TAB02" class="tab-switch" /><label class="tab-label" for="TAB02-02">2025</label>
+        <div class="tab-content">
+          コンテンツ 2
+        </div>
+        <!-- <input id="TAB02-03" type="radio" name="TAB02" class="tab-switch" /><label class="tab-label" for="TAB02-03">2026</label>
+      <div class="tab-content">
+          コンテンツ 3
+      </div>
+      <input id="TAB02-04" type="radio" name="TAB02" class="tab-switch" /><label class="tab-label" for="TAB02-04">2027</label>
+      <div class="tab-content">
+          コンテンツ 4
+      </div> -->
+      </div>
+    </div>
+  </div>
+  <footer class="p-footer l-footer">
+    <div class="p-footer__inner">
+      <div class="p-footer__wrap">
+        <div class="p-footer__left">
+          <div class="p-footer__logo">
+            <a href="#">
+              <img src="./img/logo02.png" alt="">
+            </a>
+          </div>
+          <address class="p-footer__address">
+            本店（神戸店）<br>
+            〒651-0054 <br class="u-mobile">兵庫県神戸市中央区野崎通2丁目5-15<br>
+            フリーダイヤル：<span>0120-078-771</span>　<br class="u-mobile">TEL：<span>078-242-3778</span><br>
+            三田店（三田工事センター）<br>
+            〒669-1528　<br class="u-mobile">三田駅前町17-39<br>
+            TEL：<span>079-563-3778</span><br>
+            営業時間：9:00～17:00
+          </address>
+          <a class="p-footer__btn" href="#">お問い合わせ</a>
+        </div>
+        <div class="p-footer__right">
+          <nav class="p-footer__nav">
+            <ul class="p-footer__nav-items">
+              <li class="p-footer__nav-item">
+                <a href="#">私たちについて</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="#">取り扱いサービス</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="#">ご挨拶</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="#">お客様の声</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="#">私たちのこだわり</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="#">採用情報</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="#">会社概要</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="#">プライバシーポリシー</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="#">アクセス</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="p-footer__sns">
+            <a class="p-footer__sns-icon" href="https://line.me/R/ti/p/%40010doguy" target="_blank" rel="noopener">
+              <img src="./img/icon_line.svg" alt="line">
+            </a>
+            <a class="p-footer__sns-icon" href="https://www.instagram.com/etec_kobe.jp/" target="_blank" rel="noopener">
+              <img src="./img/icon_instagram.png" alt="instagram">
+            </a>
+          </div>
+        </div>
+      </div>
+      <small class="p-footer__copyright">Copyright &copy;2024 All Reserved</small>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script defer src="./js/common.js"></script>
+</body>
+
+</html>

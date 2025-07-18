@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-page-top {
+  position: fixed;
+  right: rem(15);
+  bottom: rem(15);
+  z-index: 100;
+}

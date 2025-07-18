@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.c-open-btn {
+  width: 13px;
+  height: 13px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c-open-btn span  {
+  background:#767676;
+  display: block;
+  height: 2px;
+  transform: translateX(-50%);
+  width: 13px;
+  transition: 0.4s;
+  position: absolute;
+  left: 50%;
+}
+
+.c-open-btn span:nth-of-type(1){
+  transform: translateX(-50%) rotate(-90deg);
+}
+
+.c-open-btn span:nth-of-type(2) {
+  transform: translateX(-50%) rotate(0deg);
+}
+
+/*rotate*/
+.js-rotate.is-active span:nth-of-type(1){
+  transform: translateX(-50%) rotate(-180deg);
+}
+
+.js-rotate.is-active span:nth-of-type(2){
+  transform: translateX(-50%) rotate(0deg);
+}

@@ -1,0 +1,126 @@
+@use "global" as *;
+
+
+.p-top-mv__inner {
+  padding-left: rem(360);
+  padding-left: vw(1920,360);
+  @include mq(md) {
+    padding: 0;
+  }
+}
+
+.p-top-mv__img-box {
+  position: relative;
+  max-width: rem(1560);
+  width: 100%;
+  height: auto;
+  margin-left: auto ;
+  @include mq(md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.p-top-mv__swiper {
+  @include mq(md) {
+    order: 2;
+    margin-top: vw-m(80);/*80px*/
+  }
+}
+
+.p-top-mv__img {
+  margin-left: auto;
+  position: relative;
+  transform: scale(1);
+}
+
+.p-top-mv__img img {
+  @include mq(md) {
+    height: vw-m(508);
+    object-fit: cover;
+  }
+}
+
+.p-top-mv__txt-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -5.7%;
+  left: -90px;
+  z-index: 1;
+  max-width: rem(325);
+  width: 100%;
+  margin: 0 auto;
+  @include mq(md) {
+    position: static;
+    transform: translateY(0);
+    order: 1;
+    max-width: unset;
+    margin-top: vw-m(80);
+  }
+}
+
+.p-top-mv__logo-img {
+  max-width: vw(1920, 270);
+  width: 100%;
+  margin: 0 auto;
+  @include mq(md) {
+    max-width: rem(220);
+  }
+}
+
+.p-top-mv__copy {
+  margin-top:  vw(1920, 60);
+  font-size: rem(20);
+  color: $navy;
+  line-height: calc(30/20);
+  text-align: center;
+  @include mq(md) {
+    font-size: rem(26);
+    line-height: calc(40/26);
+    margin-top: vw-m(50);
+  }
+}
+
+//swiper
+  .swiper-container{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  }
+  .swiper-wrapper,
+  .swiper-slide > .p-top__img {
+  height: 100%;
+  width: 100%;
+  }
+
+  @keyframes zoomUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+
+  .swiper-slide-active>div,
+  .swiper-slide-duplicate-active>div,
+  .swiper-slide-prev>div {
+  animation: zoomUp 10s linear 0s 1 normal both;
+  }
+
+.swiper-slide::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+  max-width: rem(1560);
+  width: 100%;
+  height: 100.5%;
+	background-image: linear-gradient(270deg, transparent 0 70%, #fff 100%);
+  z-index: 1;
+  @include mq(md) {
+    background-image: none;
+  }
+}

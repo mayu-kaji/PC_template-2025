@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.c-ttl{
+  font-size: rem(14);
+  line-height: 1;
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.c-ttl::before{
+  content: "";
+  display: inline-block;
+  background: navy;
+  border-radius: 50%;
+  width: rem(15);
+  height: rem(15);
+  margin-right:rem(8);
+  vertical-align: middle;
+  @include mq(md) {
+    width: rem(8);
+    height: rem(8);
+  }
+}
+
+.c-ttl > span {
+  display: block;
+  font-size: rem(40);
+  font-weight: 700;
+  line-height: 150%;
+  margin-top: rem(12);
+  @include mq(md) {
+    font-size: rem(28);
+    margin-top: rem(11);
+  }
+}

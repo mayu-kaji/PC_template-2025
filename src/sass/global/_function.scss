@@ -1,0 +1,53 @@
+@use "sass:math";
+@use "sass:meta";
+
+// pxからremへの計算式
+@function rem($pixels) {
+  @return math.div($pixels, 16) * 1rem;
+}
+
+// 数値のみを取り出す
+@function strip-unit($number) {
+  @if meta.type-of($number) == "number" and not math.is-unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+  @return $number;
+}
+
+// フォントサイズ ÷ 画面幅 * 100vw の計算
+@function vw($window_width, $size) {
+  @return math.div($size, $window_width) * 100vw;
+}
+
+@function vw-xl($size) {
+  @return math.div($size, 1920) * 100vw;
+}
+
+@function vw-lg($size) {
+  @return math.div($size, 1024) * 100vw;
+}
+
+@function vw-m($size) {
+  @return math.div($size, 750) * 100vw;
+}
+
+@function vw-s($size) {
+  @return math.div($size, 375) * 100vw;
+}
+
+// リキッドフォントサイズの計算
+// 使用例
+// .example {
+//   font-size: rc(24, 64);
+// }
+@function rc($min, $max, $minViewport: 375, $maxViewport: 767) {
+  $vwScale: ($max - $min) / ($maxViewport - $minViewport);
+  $baseOffset: $min - $minViewport * $vwScale;
+
+  $minRem: $min / 16;
+  $maxRem: $max / 16;
+  $baseOffsetRem: $baseOffset / 16;
+  $vwScaleRem: $vwScale * 100;
+
+  @return clamp(#{$minRem}rem, #{$baseOffsetRem}rem + #{$vwScaleRem}vw, #{$maxRem}rem);
+}

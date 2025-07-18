@@ -1,0 +1,102 @@
+@use "global" as *;
+
+
+.p-tab {
+padding-top: rem(100);
+padding-bottom: rem(100);
+}
+
+.tab-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin:20px 0;
+}
+.tab-wrap:after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  // background: DeepSkyBlue;
+  display: block;
+  order: -1;
+}
+
+.tab-label {
+  color: White;
+  background: LightGray;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+  white-space: nowrap;
+  text-align: center;
+  padding: 10px 1em;
+  order: -1;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  // flex: 1;
+}
+.tab-label:not(:last-of-type) {
+  margin-right: 5px;
+}
+.tab-content {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/* アクティブなタブ */
+.tab-switch:checked+.tab-label {
+  background: DeepSkyBlue;
+}
+.tab-switch:checked+.tab-label+.tab-content {
+  height: auto;
+  overflow: auto;
+  padding: 15px;
+  opacity: 1;
+  transition: .5s opacity;
+  // box-shadow: 0 0 3px rgba(0,0,0,.2);
+  border-top: #ccc 1px solid;
+  margin-top: rem(-3);
+}
+/* ラジオボタン非表示 */
+.tab-switch {
+  display: none;
+}
+
+.p-tab__item {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: rem(20);
+  border-bottom: dashed 1px #ccc;
+}
+
+.p-tab__item:last-child {
+  border-bottom: dashed 1px #ccc;
+}
+
+.p-tab-date {
+  font-size: rem(16);
+}
+
+.p-tab__tag {
+  border: solid 1px #ccc;
+  margin-left: rem(15);
+  padding: rem(3) rem(10);
+  font-size: rem(18);
+}
+
+.p-tab__place {
+  font-size: rem(16);
+  margin-left: rem(20);
+}
+
+.p-tab__link {
+  width: rem(200);
+  border: solid 1px #ccc;
+  padding: rem(3) rem(10);
+  text-align: center;
+  margin-left: rem(25);
+}
+

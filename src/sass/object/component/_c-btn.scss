@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.c-btn {
+  display: block;
+  width: 100%;
+  max-width: rem(300);
+  background: rgb(148, 46, 188);
+  color: white;
+  font-size: rem(16);
+  font-weight: 700;
+  line-height: 1;
+  padding: rem(18) rem(20);
+  text-align: center;
+  border-radius: 50vw;
+  margin-top: rem(20);
+  @include mq(md) {
+    max-width: rem(200);
+  }
+}
+@media (any-hover: hover) {
+  .c-btn:hover {
+    background: rgb(62, 30, 75);
+  }
+}
